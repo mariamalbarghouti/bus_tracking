@@ -37,7 +37,7 @@ class SearchCardCubit extends Cubit<SearchCardState> {
   bool canGoToMap() {
     bool isCitiesFound = _mapRepo.canGetThoseCountries(
         source: state.source, destination: state.destination);
-        // if the values stisfied all the conditions
+        // if the values satisfies all the conditions
         // also if these cities are inside the mocketo
         // go to the next page
     if (state.destination.value.isRight() &&

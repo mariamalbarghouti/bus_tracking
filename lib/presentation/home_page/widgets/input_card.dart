@@ -25,10 +25,10 @@ class InputCard extends StatelessWidget {
           Positioned(
             left: 3.w,
             right: 3.w,
-            bottom: 5.h,
+            bottom: 1.h,
             // container color and border
             child: Container(
-              height: 25.h,
+              // height: 25.h,
               decoration: BoxDecoration(
                 color: Colors.white,
                 border: Border.all(color: faddenGreyColor),
