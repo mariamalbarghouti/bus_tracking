@@ -5,6 +5,6 @@ part 'map_state.dart';
 part 'map_cubit.freezed.dart';
 
 class MapCubit extends Cubit<MapState> {
-  MapCubit() : super(MapState.initial());
+  MapCubit() : super(const MapState.initial());
   
 }
