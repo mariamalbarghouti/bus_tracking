@@ -100,109 +100,19 @@ class _MapPageState extends State<MapPage> {
         title: const Text('BMTC'),
         actions: const [Icon(Icons.person)],
       ),
-      body: 
-      // Stack(
-      //   children: [
-          GoogleMap(
-            mapType: MapType.normal,
-            // polylines: _polyLines,
-            polylines: _polyline.toSet(),
-            initialCameraPosition: const CameraPosition(
-              target: LatLng(30.000973748864524, 32.48467525820285),
-              zoom: 10,
-            ),
-            onMapCreated: (GoogleMapController controller) {
-              _controller.complete(controller);
-            },
-            markers: markers.toSet(),
-          ),
-      //     Positioned(
-      //       left: 2.w,
-      //       right: 2.w,
-      //       bottom: 0,
-      //       child: Container(
-      //         height: 40.h,
-      //         decoration: const BoxDecoration(
-      //           color: Colors.white,
-      //           borderRadius: BorderRadius.only(
-      //               topLeft: Radius.circular(
-      //                 15.0,
-      //               ),
-      //               topRight: Radius.circular(15.0)),
-      //           boxShadow: [
-      //             BoxShadow(
-      //               color: Colors.black,
-      //               blurRadius: 16.0,
-      //               spreadRadius: 0.5,
-      //               offset: Offset(0.7, 0.7),
-      //             ),
-      //           ],
-      //         ),
-      //         child: Column(
-      //           children: [
-      //             Row(
-      //               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-
-      //               children: const [Text("Distance"), Text("Travel Time: 25 min")],
-      //             ),
-      //             Row(
-      //               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      //               children: [
-      //                 const Text("26 km"),
-      //                 Row(
-      //                   children: const [Icon(Icons.timeline), Text("02:15pm")],
-      //                 ),
-      //                 Row(
-      //                   children: const [Icon(Icons.timeline), Text("02:45pm")],
-      //                 ),
-      //               ],
-      //             ),
-      //             Row(
-      //               children: const [
-      //                 Text("trip taken on 12/30/20"),
-      //               ],
-      //             ),
-      //             Row(
-      //               children: [
-      //                 Column(
-      //                   children:  [
-      //                     Row(children: [
-      //                       const Icon(Icons.ac_unit),
-      //                       Column(children: const [Text("From ..."),Text("Nov 04, 02:15pm")],),
-      //                     ],),
-      //                     // TODO
-      //                     // SVG
-                        
-      //                    Row(children: [
-      //                       const Icon(Icons.ac_unit),
-      //                       Column(children: const [Text("To Commercial Street"),Text("Nov 04, 02:40pm")],),
-      //                     ],),
-      //                   ],
-      //                 ),
-      //                 Column(
-      //                   children: [
-      //                     MaterialButton(onPressed: (){},child: Row(children: const [Icon(Icons.notifications),Text("SET REMINDER")],),),
-      //                     MaterialButton(onPressed: (){},child: Row(children: const [Icon(Icons.play_arrow),Text("PLAY ONLINE")]),),
-      //                   ],
-      //                 ),
-      //               ],
-      //             ),
-      //           ],
-      //         ),
-      //       ),
-      //     ),
-      //     Positioned(
-      //       bottom: 36.h,
-      //       right: 2.w,
-      //       child: IconButton(
-      //         onPressed: () {},
-      //         icon: const CircleAvatar(
-      //           child: Icon(Icons.share),
-      //         ),
-      //       ),
-      //     ),
-      //   ],
-      // ),
+      body: GoogleMap(
+        mapType: MapType.normal,
+        // polylines: _polyLines,
+        polylines: _polyline.toSet(),
+        initialCameraPosition: const CameraPosition(
+          target: LatLng(30.000973748864524, 32.48467525820285),
+          zoom: 10,
+        ),
+        onMapCreated: (GoogleMapController controller) {
+          _controller.complete(controller);
+        },
+        markers: markers.toSet(),
+      ),
     );
   }
 
