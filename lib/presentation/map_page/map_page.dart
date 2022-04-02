@@ -30,7 +30,7 @@ class _MapPageState extends State<MapPage> {
     );
   }
 
-  createMarkerSourceAndDistination({
+  createMarkerSourceAndDistinction({
     required int id,
     required String title,
     required double lat,
@@ -52,13 +52,13 @@ class _MapPageState extends State<MapPage> {
     // track all the signed users
     _trackUserLocation();
     createPolyLine();
-    createMarkerSourceAndDistination(
+    createMarkerSourceAndDistinction(
       id: 0,
       lat: 29.997438,
       long: 32.500481,
       title: 'Suez University',
     );
-    createMarkerSourceAndDistination(
+    createMarkerSourceAndDistinction(
       id: 1,
       lat: 30.000973748864524,
       long: 32.48467525820285,
